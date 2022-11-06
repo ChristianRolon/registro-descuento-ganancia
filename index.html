@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+        <title>Registro de Ingresos</title>
+        <link rel="icon" href="estadística.png"></link>
+    </head>
+    <body>
+      <div class="fondo">
+        <h1>Nuestra Moda</h1>
+        <h3>Control de Ingresos</h3>
+      </div>
+      <div class="contenedor">
+        <p>Para cáculos de descuentos o ganancias que se desea realizar</p>
+      <p>Por favor, ingrese los siguientes datos:</p>
+    <div id="formulario">
+      <form id="miformulario">
+          <div>
+              <span>Mercadería:</span> <input type="text" id="mercaderías" class="input" placeholder="">
+          </div>
+          <div>
+              <span>Costo:</span> <input type="number" id="costo" class="input" placeholder="Gs">
+          </div>
+          <div>
+              <span>Porcentaje a calcular:</span> <input type="number" id="porcentaje" class="input" placeholder="%">
+          </div>
+          <div>
+              <span>Fecha:</span> <input type="date" class="input" id="fecha">
+          </div>
+      </form>
+    </div>
+
+      <div id="button" class="button" onclick="generar()">Generar</div> <br>
+      <div id="button" class="button" onclick="limpiar()">Limpiar campos</div>
+
+      <p>Porcentaje calculado: <span id="porcentaje calculado"></span></p> <br>
+    </div>
+    </body>
+  </html>
